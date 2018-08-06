@@ -1,0 +1,53 @@
+.bar-button-default-md, .bar-button-clear-md-default, .bar-button-md-default {
+    color: #fff;
+    background-color: transparent;
+}
+ .toolbar-background-md {
+    border-color: #b2b2b2;
+    background: #232F3E;
+}
+ion-title{
+    color:#fff;
+}
+
+
+.toolbar-title-md {
+    padding: 0 12px;
+    font-size: 2rem;
+    font-weight: 500;
+    color: #fff;
+}
+body{font-family: "Roboto",Arial,sans-serif;}
+.my-custom-alert{
+
+    .alert-wrapper  {
+     width:100%; float: left; background: #ECE8DF !important; 
+     border-top:20px #DC683F solid !important;
+     border-bottom:20px #DC683F solid !important;
+    }
+    .alert-md , .alert-title {
+        font-size: 17px;  line-height: 22px;
+        font-family: 'Nanum Myeongjo', serif;
+        font-family: 'Lora', serif;
+                color:#3E3A31; font-weight: bold;
+    }
+    .alert-md , .alert-sub-title {
+        font-family: 'Nanum Myeongjo', serif;
+        font-family: 'Lora', serif;
+                color:#646347;
+        font-size: 14px; font-weight: 900;
+    }
+   
+          .alert-head {
+         
+            margin-bottom: 10px;
+          }
+          .alert-md ,.alert-button {
+          
+            color: #5f6165;
+           
+        }
+       
+        }
+
+

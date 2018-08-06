@@ -1,0 +1,107 @@
+
+<ion-header>
+
+  <ion-navbar>
+      <div class="menu_postion">
+          <button id="menu_refence" ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+           
+          </button>
+  
+      <ion-title>WebIndia</ion-title>
+      <div class="cart">   <ion-icon name="cart"></ion-icon> </div>
+    </div>
+   
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <p class="username" *ngIf="username !== undefine"> Hello  {{username}}</p>
+  
+   <!--- <ion-list class="accordian-list">
+      <ion-list-header *ngFor="let item of information; let i=index" no-lines 
+      no-padding>
+      <button ion-item (click)="toggleSection(i)" detail-none [ngClass]=
+      "{'section-active':item.open, 'section':!item.open}">
+      <ion-icon item-left name="add" *ngIf="!item.open"></ion-icon>
+      <ion-icon item-left name="close" *ngIf="item.open"></ion-icon>
+      {{item.name}}
+      </button>
+      <ion-list *ngIf="item.children && item.open" no-lines>
+      <ion-list-header *ngFor="let child of item.children; let j=index"  
+      no-padding>
+      <button ion-item (click)="toggleItem(i,j)" detail-none class="child-item"
+      *ngIf="child.children">
+      <ion-icon item-left name="add" *ngIf="!child.open"></ion-icon>
+      <ion-icon item-left name="close" *ngIf="child.open"></ion-icon>
+      {{child.name}}
+      </button>
+      <ion-item *ngIf="!child.children" detail-none class="clid-item"
+      text-wrap>
+      <h2>{{child.name}}</h2>
+      <p text-lowercase>{{child.information}}</p>
+      <button ion-button outline item-end (click)="buyItem(child)">
+      {{child.price}}</button>
+      </ion-item>
+      <ion-list *ngIf="child.children && child.open">
+      <ion-item *ngFor="let item of child.children" detail-none class="child-item"
+      text-wrap>
+      <h2>{{item.name}}</h2>
+      <p text-lowercase>{{item.information}}</p>
+      <button ion-button outline item-end (click)="buyItem(child)">
+      {{child.price}}
+      </button>
+      </ion-item>
+      </ion-list>
+      </ion-list-header>
+      </ion-list>
+      </ion-list-header>
+      </ion-list>
+    -->
+    
+    <ion-list class="accordian-list" >
+      <ion-list-header *ngFor="let item of information; let i=index" no-padding
+      no-padding>
+      <ion-grid>
+          <ion-row >
+              <ion-col col-2 class="heading_margin">
+                 <img [src]="item.icon"/>
+               </ion-col>
+        <ion-col col-8 class="heading_margin" >
+         {{item.name}}
+      </ion-col>
+      <ion-col col-2>
+      <button ion-item (click)="toggleSection(i)" detail-none [ngClass]=
+      "{'section-active':item.open, 'section':!item.open}">
+     
+      <ion-icon item-left name="add" *ngIf="!item.open"></ion-icon>
+      <ion-icon item-left name="close" *ngIf="item.open"></ion-icon>
+  
+      </button>
+    </ion-col>
+    </ion-row>
+    </ion-grid>
+      <ion-list *ngIf="item.children && item.open">
+      <ion-list-header *ngFor="let child of item.children; let j=index"  
+      no-padding>
+    
+      <ion-item *ngIf="!child.children" detail-none class="clid-item"
+      text-wrap>
+     
+            <ion-thumbnail item-start >
+                <img [src]= "child.imgSrc"/>
+            </ion-thumbnail>
+            <h2>{{child.name}}</h2>
+            <p text-lowercase>{{child.information}}</p>
+            <button ion-button clear item-end>View</button>
+          </ion-item>
+        
+      
+     
+      </ion-list-header>
+      </ion-list>
+      </ion-list-header>
+      </ion-list>
+</ion-content>

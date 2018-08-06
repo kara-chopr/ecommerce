@@ -1,0 +1,113 @@
+
+<ion-header>
+    <ion-navbar>
+      <div class="menu_postion">
+        <button id="menu_refence" ion-button menuToggle>
+          <ion-icon name="menu"></ion-icon>
+         
+        </button>
+       
+    <ion-title [innerHtml]="config.getTranslation('home_title')"></ion-title>
+   <div class="cart">   <ion-icon name="cart"></ion-icon> </div>
+  </div>
+   <ion-grid class="catagries_grid">
+    <ion-row class="catagries_row">
+      <ion-col col-3>
+   <button  class="catagries" (click)="redirectTocategoriesPage()"[innerHtml]="config.getTranslation('categories')"></button>
+</ion-col>
+<ion-col col-9>
+    <ion-searchbar
+    [(ngModel)]="myInput"
+    [showCancelButton]="shouldShowCancel"
+    
+    (ionCancel)="onCancel($event)">
+  </ion-searchbar>
+  <div class="price_range">
+     <div class="range_slidder">
+    <ion-range min="300" max="1000" step="3" [(ngModel)]="pricerange"  (ionChange)="pricrange(pricerange)"
+    debounce="500">
+  </ion-range>
+  </div>
+  <div class="price_tag">
+  Price  {{pricerange}} 
+  </div> 
+  </div>
+ 
+  </ion-col>
+</ion-row>
+</ion-grid>
+  </ion-navbar>
+  
+ 
+</ion-header>
+
+
+
+<ion-content >
+  <div *ngIf="laptopView && pricerangeflag == true">
+  <div *ngFor="let product of laptopView.ProductCollection |  paginate: { itemsPerPage:10, currentPage: p } myInput"
+  (click)="RedirecttoProductdescription(product)">
+      <ion-grid class="catagries_grid">
+          <ion-row class="catagries_row">
+            <ion-col col-4>
+              <div class="product_image">
+              <img src="{{product.ProductPicUrl}}"/>
+              <span class="discount"><p class="discount_percentage">{{product.Width}}%</p></span>
+            </div>
+              </ion-col>
+            
+              <ion-col col-8>
+               <div class="product_description">
+                 <h6>{{product.Description}}</h6>
+                 <p>by{{product.SupplierName}}</p>
+                 <p> $:{{product.Price}}</p>
+                 <p>Status : {{product.Status}}</p>
+               </div>
+                </ion-col>
+              </ion-row>
+              </ion-grid>
+   
+  </div>
+ 
+  
+</div>
+<div>
+<div *ngIf="pricefilterview  && pricerangeflag !== true">
+  <div *ngFor="let product of pricefilterview  | paginate: { itemsPerPage:10, currentPage: p }"
+  (click)="RedirecttoProductdescription(product)">
+      <ion-grid class="catagries_grid">
+          <ion-row class="catagries_row">
+            <ion-col col-4>
+              <div class="product_image">
+              <img src="{{product.ProductPicUrl}}"/>
+              <span class="discount"><p class="discount_percentage">{{product.Width}}%</p></span>
+            </div>
+              </ion-col>
+            
+              <ion-col col-8>
+               <div class="product_description">
+                 <h6>{{product.Description}}</h6>
+                 <p>by{{product.SupplierName}}</p>
+                 <p> $:{{product.Price}}</p>
+                 <p>Status : {{product.Status}}</p>
+               </div>
+                </ion-col>
+              </ion-row>
+              </ion-grid>
+   
+  </div>
+ 
+  
+</div>
+</div>
+
+<p *ngIf="pricerangeflag == true">
+  <pagination-controls (pageChange)="p = $event"></pagination-controls>
+
+</p>
+<p *ngIf="pricerangeflag !== true">
+    <pagination-controls (pageChange)="p = $event"></pagination-controls>
+  
+  </p>
+
+</ion-content>

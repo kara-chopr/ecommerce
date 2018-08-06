@@ -1,0 +1,61 @@
+<ion-header>
+   
+    <ion-navbar>
+      <div class="menu_postion">
+        <button id="menu_refence" ion-button menuToggle>
+          <ion-icon name="menu"></ion-icon>
+         
+        </button>
+       
+    <ion-title [innerHtml]="config.getTranslation('home_title')"></ion-title>
+   <div class="cart" (click)="redirectTocartPage()">   <ion-icon name="cart" ><span *ngIf="length !==0">{{length}}</span></ion-icon> </div>
+  </div>
+   <ion-grid class="catagries_grid">
+    <ion-row class="catagries_row">
+      <ion-col col-3>
+   <button  class="catagries" (click)="redirectTocategoriesPage()"[innerHtml]="config.getTranslation('categories')"></button>
+  </ion-col>
+  
+  <ion-col col-9>
+    <ion-searchbar
+    [(ngModel)]="myInput"
+    [showCancelButton]="shouldShowCancel"
+    
+    (ionCancel)="onCancel($event)">
+    </ion-searchbar>
+  </ion-col>
+  </ion-row>
+  </ion-grid>
+  </ion-navbar>
+  </ion-header>
+  
+
+
+<ion-content padding>
+    <div *ngFor="let product of cartItems"
+    >
+        <ion-grid class="catagries_grid">
+            <ion-row class="catagries_row">
+              <ion-col col-4>
+                <div class="product_image">
+                <img src="{{product.ProductPicUrl}}"/>
+                <span class="discount"><p class="discount_percentage">{{product.Width}}%</p></span>
+              </div>
+                </ion-col>
+              
+                <ion-col col-8>
+                 <div class="product_description">
+                   <h6>{{product.Description}}</h6>
+                   <p>by{{product.SupplierName}}</p>
+                   <p> $:{{product.Price}}</p>
+                   <p>Status : {{product.Status}}</p>
+                 </div>
+                  </ion-col>
+                </ion-row>
+                </ion-grid>
+     
+    </div>
+   
+    
+  
+</ion-content>

@@ -1,0 +1,71 @@
+page-verfifyemail {
+    ion-title{ width: 55%;
+        float: left;
+        margin-left: 56px;
+        margin-top: 8px;
+        font-size: 15px;}
+    .cart{
+       color: #fff; font-size: 20px;  float: right; margin-right: 6%; margin-top: 3px;
+    }
+    .menu_postion{
+        position: relative;margin-top: 2px;
+    }
+    #menu_refence{
+        position: absolute; top:0px; left:0px;
+    }
+    .searchbar-md .searchbar-search-icon {
+       
+        top: 5px;
+        
+    }
+    .catagries{
+        font-size: 10px; margin-top:6px; 
+        width: 62px;
+        padding: 0px;
+        color: #000;
+        background: #ffffff;
+        background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), color-stop(50%, #f1f1f1), color-stop(51%, #e1e1e1), to(#f6f6f6));
+        background: linear-gradient(to bottom, #ffffff 0%, #f1f1f1 50%, #e1e1e1 51%, #f6f6f6 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f6f6f6',GradientType=0 );
+        border-radius: 3px;
+        height: 26px; font-weight: 800;
+    }
+    .catagries_grid{ position: relative; }
+    .catagries_row{
+        margin-top:0px;}
+      .searchbar-md .searchbar-input {
+        padding: 0px 47px;
+        border-radius: 5px;
+        background-position: left 8px center;
+        height: auto;
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 3rem;
+        color: #141414;
+        background-color: #fff;
+        -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    }
+    .signup-row{
+        width:100%; float: left; padding: 5px; border: 1px #ccc solid; border-radius:5px;
+    }
+    .edit-button{
+        font-size: 14px; margin-top:12px; 
+        width: 90px;
+        padding: 0px;
+        color: #000;
+        background: #eeeeee; /* Old browsers */
+        background: -moz-linear-gradient(top, #eeeeee 0%, #eeeeee 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, #eeeeee 0%,#eeeeee 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, #eeeeee 0%,#eeeeee 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#eeeeee',GradientType=0 ); /* IE6-9 */
+        border-radius: 3px;
+        height: 35px; font-weight: 600; border:1px #ccc solid;
+    }
+    .signupvalue_name{
+        font-size: 14px;
+    }
+    .signin-button{ width: 100%; padding:5px; text-align: center; border-radius: 5px;
+        background: #e4b950;}
+        .signin-button:active{background: #08aa02;}
+}

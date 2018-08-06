@@ -1,0 +1,165 @@
+page-index {
+
+    ion-title{ width: 55%;
+        float: left;
+        margin-left: 56px;
+        margin-top: 8px;
+        font-size: 15px;}
+    .cart{
+       color: #fff; font-size: 20px;  float: right; margin-right: 6%; margin-top: 3px;
+    }
+    .menu_postion{
+        position: relative;margin-top: 2px;
+    }
+    #menu_refence{
+        position: absolute; top:0px; left:0px;
+    }
+    .searchbar-md .searchbar-search-icon {
+       
+        top: 5px;
+        
+    }
+    .catagries{
+        font-size: 10px; margin-top:6px; 
+        width: 62px;
+        padding: 0px;
+        color: #000;
+        background: #ffffff;
+        background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), color-stop(50%, #f1f1f1), color-stop(51%, #e1e1e1), to(#f6f6f6));
+        background: linear-gradient(to bottom, #ffffff 0%, #f1f1f1 50%, #e1e1e1 51%, #f6f6f6 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f6f6f6',GradientType=0 );
+        border-radius: 3px;
+        height: 26px; font-weight: 800;
+    }
+    .catagries_grid{ position: relative; }
+    .catagries_row{
+        margin-top:0px;}
+      .searchbar-md .searchbar-input {
+        padding: 0px 47px;
+        border-radius: 5px;
+        background-position: left 8px center;
+        height: auto;
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 3rem;
+        color: #141414;
+        background-color: #fff;
+        -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    }
+    .primeday{ width: 100%; float: left; background: #ccc;}
+    .primeday img { width:100%;  height: auto; padding-top: 3px; }
+    .slidder{
+        width:100%; height: 100px;
+    }
+    .slidder img{
+        width:100%; height: 100px; 
+    }
+    .blockbouster{
+        width:100%; margin-top: 10px; float: left;
+    }
+    
+    .blockbouster h4{color: #444!important;letter-spacing: 1px; font-size: 16px;}
+    .line{ width: 100%; height: 1px; background: #ccc; float: left;}
+    .line-blockbuster{ width: 100%; height: 1px; background: #ccc; float: left; margin-top: 10px; margin-bottom: 10px;}
+    
+    .thumbnail { width:100%; float: left;}
+    .thumbnail li {margin-right: 10px; list-style: none; width:20%;float: left; cursor: pointer;}
+    .thumbnail li span img { width:100%; height: 60px;}
+    #slidderrs{
+        width:100%; float: left; position:relative; margin-top:0px;
+    }
+    .slidderfaed{
+        margin-top: 10px;
+    }
+    #Blockbuster{
+        width:100%; position: relative; margin-top: 10px; float: left;
+       
+    }
+    #Blockbuster img {
+        width: 59%;
+        /* float: left; */
+        height: 120px;
+        /* margin-bottom: 10px; */
+        margin: 0 auto;
+        padding-left: 38px;
+    }
+    #exchangeoffer{
+        width:100%; margin-top: -16px; float: left;
+    }
+    #exchangeoffer h4{color: #444!important;letter-spacing: 1px; font-size: 16px;}
+    .anchorTag{
+        color: #48a3c6;
+        font-size: 14px;  margin-top:6px; float: left; 
+
+    }
+    .daily-esstails{
+        width: 100%; float: left; height: auto; background: #ccc; padding: 4px; margin-top: -22px;
+        cursor: pointer;
+    }
+   
+    .motto-phone{
+        width:100%; margin-top:0px; float: left;
+    }
+    .motomobile_price{
+        text-align: center; font-size: 13px;color: #00464f; margin-top: -8px;
+    }
+    .background-green{
+        width: 100%; float: left; background:#A7E7CF; padding: 10px;
+    }
+    .motomobile_name{
+        text-align: center; font-size: 15px;color: #00464f;
+    }
+    .motto_heading{
+        color: #444!important;letter-spacing: 1px; font-size: 16px; padding-top:-4px;
+    }
+    .discount{
+        width:100%; float: left; margin-top: -7px;
+    }
+    .discount-heading{
+        color: #444!important;letter-spacing: 1px; font-size: 16px;
+    }
+    
+    
+    .sign-in{
+        width:100%; float: left; margin-top: -17px;
+
+    }
+    .sign-line{width: 100%; height: 3px; background: #ccc; float: left;}
+    .sing_inheading{
+        color: #444 !important;
+    letter-spacing: 1px;
+    font-size: 16px;
+    }
+    
+    .signin-button{ width: 100%; padding:5px; text-align: center; border-radius: 5px;
+    background: #e4b950;}
+    .signin-button:active{background: #08aa02;}
+    .feature_catgries{ width: 100%; float: left;}
+    .feature_image{
+        width:100%; height: 120px;
+    }
+    .feature_image img{
+        width:100%; height: 120px;
+    }
+    .feature_catgries-heading{
+        color: #444!important;letter-spacing: 1px; font-size: 16px; padding-top:-4px;
+    }
+    .feature_catgries_price{
+       
+    }
+ 
+#verifyemail{
+    width:100%; height: auto;float:left;margin-bottom: 20px;
+}
+#verifyemail img{
+    width: 100%;
+    
+    height: auto;
+    background: #ccc;
+    padding-top: 4px;
+    padding-bottom: 4px;
+  
+    cursor: pointer;
+}
+}

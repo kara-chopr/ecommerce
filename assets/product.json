@@ -1,0 +1,25 @@
+{
+	"arrayOfProducts": [
+		{
+			"imgUrl": "assets/imgs/f2.jpg",
+			"name": "CHECK PRINT SHIRT",
+			"price": 110
+		},
+		{
+			"imgUrl": "assets/imgs/f3.jpg",
+			"name": "GLORIA HIGH LOGO SNEAKER",
+			"price": 91
+		},
+		{
+			"imgUrl": "assets/imgs/f1.jpg",
+			"name": "CATE RIGID BAG",
+			"price": 94.5
+		},
+		{
+			"imgUrl": "http://guesseu.scene7.com/is/image/GuessEU/WC0001FMSWC-G5?wid=520&fmt=jpeg&qlt=80&op_sharpen=0&op_usm=1.0,1.0,5,0&iccEmbed=0",
+			"name": "GUESS CONNECT WATCH",
+			"price": 438.9
+		}
+		
+	]
+}

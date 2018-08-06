@@ -1,0 +1,131 @@
+<ion-header>
+   
+  <ion-navbar>
+    <div class="menu_postion">
+      <button id="menu_refence" ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+       
+      </button>
+     
+  <ion-title [innerHtml]="config.getTranslation('home_title')"></ion-title>
+ <div class="cart" (click)="redirectTocartPage()">   <ion-icon name="cart" ><span *ngIf="length !==0">{{length}}</span></ion-icon> </div>
+</div>
+ <ion-grid class="catagries_grid">
+  <ion-row class="catagries_row">
+    <ion-col col-3>
+ <button  class="catagries" (click)="redirectTocategoriesPage()"[innerHtml]="config.getTranslation('categories')"></button>
+</ion-col>
+
+<ion-col col-9>
+  <ion-searchbar
+  [(ngModel)]="myInput"
+  [showCancelButton]="shouldShowCancel"
+  
+  (ionCancel)="onCancel($event)">
+</ion-searchbar>
+</ion-col>
+</ion-row>
+</ion-grid>
+</ion-navbar>
+</ion-header>
+
+
+
+<ion-content>
+    
+<div *ngIf="productDescriptions">
+  <div  class="slidder" id="slidderrs">
+      
+    <ion-slides #slide id="slide1" *ngIf="slideData && slideData.length" autoplay="2000" class="slideroption" pager="true"   loop="true" speed="300">
+   
+        <ion-slide   *ngFor="let slide of slideData">
+                 <span>  <img src="{{slide.imageSrc}}" /></span>
+              </ion-slide>
+      </ion-slides>
+      <button ion-button class="signin-button" class="whishlist"
+     >
+   <ion-icon name="heart-outline"></ion-icon></button>
+  <div class="fab_series-position">
+   <ion-fab top left edge>
+    <button ion-fab mini color="clear"><ion-icon name="share"></ion-icon></button>
+    <ion-fab-list side="up">
+      <button ion-fab><ion-icon name="logo-facebook"></ion-icon></button>
+      <button ion-fab><ion-icon name="logo-twitter"></ion-icon></button>
+      <button ion-fab><ion-icon name="logo-vimeo"></ion-icon></button>
+      <button ion-fab><ion-icon name="logo-googleplus"></ion-icon></button>
+    </ion-fab-list>
+  </ion-fab>
+</div>
+</div>
+<span class="line" no-padding></span>
+<div class="product_description" padding>
+<h6 class="text-center">{{productDescriptions.Name}}</h6>
+<p class="productDescriptions">{{productDescriptions.Description}}</p>
+<p class="rating_numbers">{{productDescriptions.Height}}</p>
+<rating [(ngModel)]="productDescriptions.Height" 
+        readOnly="false" 
+        max="5" 
+        emptyStarIconName="star-outline"
+        halfStarIconName="star-half"
+        starIconName="star"
+        nullable="false"
+        (ngModelChange)="onModelChange($event)"> 
+</rating>
+<div class="price_group">
+<p class="price"> $ {{productDescriptions.Price}}</p>
+<p class="old_price">$ {{productDescriptions.oldPrice}}</p>
+<p class="discount"> {{productDescriptions.Width}} % off</p>
+</div>
+<div class="instock">
+  <h6 class="stock_heading" [innerHtml]="config.getTranslation('stock')"></h6>
+  
+  
+  <span class="buyers_name" *ngIf="buyername ==undefined"> Our morning Deliver at 11:00 a.m. to 
+<ion-grid class="catagries_grid">
+    <ion-row class="time_left">
+     
+<ion-col col-2>
+   <div class=" time">{{hours}}
+  </div>
+  </ion-col>
+  <ion-col col-2>
+   <div class=" time">{{minutes}}
+  </div>
+  </ion-col>
+  <ion-col col-3>
+   <div  class="time">{{seconds}}  left
+  </div>
+</ion-col>
+  </ion-row>
+  </ion-grid>
+</span>
+  </div>
+  <div class=" buynow" padding>
+      <button ion-button block outline  color="white" [innerHtml]="config.getTranslation('buy_now')"
+      class="signin_button" >
+ </button>
+ <button ion-button block outline  color="white" [innerHtml]="config.getTranslation('addtocart_button')"
+ class="signin_button" (click)="addtocart(productDescriptions)">
+</button>
+
+
+    </div>
+</div>
+
+  <div class="key_featureheading" padding>
+    <h6>Key Feature</h6>
+  </div>
+  <div class="key_feature" padding>
+    <ul padding>
+      <li>Height ({{productDescriptions.DimUnit}}) : {{productDescriptions.Height}}</li>
+      <li> Quantity : {{productDescriptions.Quantity}}</li>
+    </ul>
+   
+  </div>
+  
+  
+</div>
+<p class="view_more"[innerHtml]="config.getTranslation('viewmore')" padding></p>
+
+
+</ion-content>

@@ -1,0 +1,80 @@
+page-laptopproduct {
+    ion-title{ width: 55%;
+        float: left;
+        margin-left: 56px;
+        margin-top: 8px;
+        font-size: 15px;}
+    .cart{
+       color: #fff; font-size: 20px;  float: right; margin-right: 6%; margin-top: 3px;
+    }
+    .menu_postion{
+        position: relative;margin-top: 2px;
+    }
+    #menu_refence{
+        position: absolute; top:0px; left:0px;
+    }
+    .searchbar-md .searchbar-search-icon {
+       
+        top: 5px;
+        
+    }
+    .catagries{
+        font-size: 10px; margin-top:6px; 
+        width: 62px;
+        padding: 0px;
+        color: #000;
+        background: #ffffff;
+        background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), color-stop(50%, #f1f1f1), color-stop(51%, #e1e1e1), to(#f6f6f6));
+        background: linear-gradient(to bottom, #ffffff 0%, #f1f1f1 50%, #e1e1e1 51%, #f6f6f6 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f6f6f6',GradientType=0 );
+        border-radius: 3px;
+        height: 26px; font-weight: 800;
+    }
+    .catagries_grid{ position: relative; }
+    .catagries_row{
+        margin-top:0px;}
+      .searchbar-md .searchbar-input {
+        padding: 0px 47px;
+        border-radius: 5px;
+        background-position: left 8px center;
+        height: auto;
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 3rem;
+        color: #141414;
+        background-color: #fff;
+        -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    }
+    .catagries_row{
+        width:100%; float:left; border-bottom: 1px #ccc solid; padding: 6px;
+    }
+    .product_image{
+        width:100%; float: left; position: relative;
+    }
+    .discount{ width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background: #e60202f5;
+        position: absolute;
+        top: 3px;
+        left: 1px; text-align: center; color: #fff;}
+        .discount_percentage{
+            position: relative;
+            float: left;
+            top: 5%;
+            left: 42%;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-41%, -50%);
+        }
+.price_range{width:100%; float: left; margin-top: -10px; padding: 3px;}
+.range_slidder{ width:70%; float: left;}
+.range-md {
+    padding: 0px;
+}
+.range-md , .range-slider {
+    height: 29px;
+}
+.price_tag{ float:right; color: #fff; font-size: 12px; margin-top: 9px;}
+
+}

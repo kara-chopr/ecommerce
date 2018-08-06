@@ -1,0 +1,98 @@
+
+<ion-header>
+  <ion-navbar>
+    <div class="menu_postion">
+      <button id="menu_refence" ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+       
+      </button>
+     
+  <ion-title [innerHtml]="config.getTranslation('home_title')"></ion-title>
+ <div class="cart">   <ion-icon name="cart"></ion-icon> </div>
+</div>
+ <ion-grid class="catagries_grid">
+  <ion-row class="catagries_row">
+    <ion-col col-3>
+ <button  class="catagries" (click)="redirectTocategoriesPage()"[innerHtml]="config.getTranslation('categories')"></button>
+</ion-col>
+<ion-col col-9>
+  <ion-searchbar
+  [(ngModel)]="myInput"
+  [showCancelButton]="shouldShowCancel"
+  
+  (ionCancel)="onCancel($event)">
+</ion-searchbar>
+</ion-col>
+</ion-row>
+</ion-grid>
+</ion-navbar>
+
+
+</ion-header>
+
+
+
+<ion-content padding>
+<div class="verify_heading">
+  <h3 [innerHtml]="config.getTranslation('security')"></h3>
+</div>
+<ion-grid>
+  <ion-row *ngIf="signupValue" class="signup-row">
+  
+                <ion-col col-7>
+               <h6 [innerHtml]="config.getTranslation('name')"></h6>
+                <p class="signupvalue_name">{{signupValue.name}}</p>
+                </ion-col>
+                <ion-col col-4>
+                <button ion-button class="edit-button" [innerHtml]="config.getTranslation('edit')"
+                (click)="redirectToEditPage()"></button>
+                </ion-col>
+            
+
+      </ion-row>
+      <ion-row *ngIf="signupValue" class="signup-row">
+  
+          <ion-col col-7>
+         <h6 [innerHtml]="config.getTranslation('email')"></h6>
+          <p class="signupvalue_name">{{signupValue.emails}}</p>
+          </ion-col>
+          <ion-col col-4>
+          <button ion-button class="edit-button" [innerHtml]="config.getTranslation('edit')"
+          (click)="redirectToEditPage()"></button>
+          </ion-col>
+      
+
+</ion-row>
+<ion-row *ngIf="signupValue" class="signup-row">
+  
+    <ion-col col-7>
+   <h6 [innerHtml]="config.getTranslation('phone')"></h6>
+    <p class="signupvalue_name">{{signupValue.phone}}</p>
+    </ion-col>
+    <ion-col col-4>
+    <button ion-button class="edit-button" [innerHtml]="config.getTranslation('edit')"
+    (click)="redirectToEditPage()"></button>
+    </ion-col>
+
+</ion-row>
+<ion-row *ngIf="signupValue" class="signup-row">
+  
+    <ion-col col-7>
+   <h6 [innerHtml]="config.getTranslation('password')"></h6>
+    <p class="signupvalue_name">{{signupValue.passwords}}</p>
+    </ion-col>
+    <ion-col col-4>
+    <button ion-button class="edit-button" [innerHtml]="config.getTranslation('edit')"
+    (click)="redirectToEditPage()"></button>
+    </ion-col>
+
+</ion-row>
+<div class="sign-in" padding>
+     
+   
+   <button ion-button class="signin-button" [innerHtml]="config.getTranslation('done')"
+   (click)="redirectTologinPage()"></button>
+
+ </div>
+      </ion-grid>
+</ion-content>

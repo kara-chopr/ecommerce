@@ -1,0 +1,43 @@
+page-catgries {
+    ion-title{     width:55%;
+        float: left;
+        margin-left: 35px; margin-top: 2px;}
+    .cart{
+       color: #fff; font-size: 20px;  float: right; margin-right: 6%; margin-top: 3px;
+    }
+    .menu_postion{
+        position: relative;margin-top: 2px;
+    }
+    #menu_refence{
+        position: absolute; top:0px; left:0px;
+    }
+    .searchbar-md .searchbar-search-icon {
+       
+        top: 5px;
+        
+    }
+    .heading_margin{
+        padding-top: 19px;
+        float: left;
+        font-weight: 500;
+        font-size: 15px;
+    }
+    .list-header-md {
+        padding-left: 16px;
+        margin-bottom: -17px;
+      
+        border-top: 1px solid #dedede;
+        font-size: 1.4rem;
+        color: #777777;
+    }
+    .border_bottom{
+        width:100px; float: left; padding-top: 5px; padding-bottom: 5px;
+         border-bottom: 1px #777777 solid;
+    }
+    .username{
+       
+        width:100%;color: #777777;
+        font-size: 16px;
+        font-weight: 400;
+    }
+}

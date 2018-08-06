@@ -1,0 +1,146 @@
+{
+    "items": [
+        {
+            "name": "Mobile and Compputers",
+            "icon":"assets/imgs/i1.png",
+            "children": [
+                {
+                    "name": "Vivo",
+                    "information": "Pastrami pork belly ball tip andouille corned beef jerky shankle landjaeger.",
+                    "price": "$25",
+                    "imgSrc":"assets/imgs/m2.jpg"
+                },
+                {
+                    "name": "Samsung",
+                    "information": "Pork chop meatloaf rump, meatball shoulder turducken alcatra doner .",
+                    "price": "$19.99",
+                    "imgSrc":"assets/imgs/m2.jpg"
+
+                },
+                {
+                    "name": "Samsung",
+                    "information": "Pork chop meatloaf rump, meatball shoulder turducken alcatra doner .",
+                    "price": "$19.99",
+                    "imgSrc":"assets/imgs/m2.jpg"
+
+                },
+                {
+                    "name": "Samsung",
+                    "information": "Pork chop meatloaf rump, meatball shoulder turducken alcatra doner .",
+                    "price": "$19.99",
+                    "imgSrc":"assets/imgs/m2.jpg"
+
+                }
+            ]
+        },
+       
+        {
+            "name": "Electronics",
+            "icon":"assets/imgs/i2.png",
+            "children": [
+                {
+                    "name": "Special Academy Pizza",
+                    "information": " Landjaeger fatback shank frankfurter, tongue shoulder ham strip steak pancetta pork short loin corned beef short ribs biltong cow",
+                    "price": "$25",
+                    "imgSrc":"assets/imgs/m2.jpg"
+                },
+                {
+                    "name": "Pizza Ionic",
+                    "information": "Pork chop pastrami landjaeger chuck brisket",
+                    "price": "$19.99",
+                    "imgSrc":"assets/imgs/m2.jpg"
+                }
+            ]
+        },
+        {
+            "name": "Cloths",
+            "icon":"assets/imgs/i3.png",
+            "children": [
+                {
+                    "name": "Special Academy Pizza",
+                    "information": " Landjaeger fatback shank frankfurter, tongue shoulder ham strip steak pancetta pork short loin corned beef short ribs biltong cow",
+                    "price": "$25",
+                    "imgSrc":"assets/imgs/m2.jpg"
+                },
+                {
+                    "name": "Pizza Ionic",
+                    "information": "Pork chop pastrami landjaeger chuck brisket",
+                    "price": "$19.99",
+                    "imgSrc":"assets/imgs/m2.jpg"
+                }
+            ]
+        },
+        {
+            "name": "Fashion",
+            "icon":"assets/imgs/i4.png",
+            "children": [
+                {
+                    "name": "Special Academy Pizza",
+                    "information": " Landjaeger fatback shank frankfurter, tongue shoulder ham strip steak pancetta pork short loin corned beef short ribs biltong cow",
+                    "price": "$25",
+                    "imgSrc":"assets/imgs/m2.jpg"
+                },
+                {
+                    "name": "Pizza Ionic",
+                    "information": "Pork chop pastrami landjaeger chuck brisket",
+                    "price": "$19.99",
+                    "imgSrc":"assets/imgs/m2.jpg"
+                }
+            ]
+        },
+        {
+            "name": "Current Trends",
+            "icon":"assets/imgs/i5.png",
+            "children": [
+                {
+                    "name": "Special Academy Pizza",
+                    "information": " Landjaeger fatback shank frankfurter, tongue shoulder ham strip steak pancetta pork short loin corned beef short ribs biltong cow",
+                    "price": "$25",
+                    "imgSrc":"assets/imgs/m2.jpg"
+                },
+                {
+                    "name": "Pizza Ionic",
+                    "information": "Pork chop pastrami landjaeger chuck brisket",
+                    "price": "$19.99",
+                    "imgSrc":"assets/imgs/m2.jpg"
+                }
+            ]
+        },
+        {
+            "name": "Todays Deal",
+            "icon":"assets/imgs/i6.png",
+            "children": [
+                {
+                    "name": "Special Academy Pizza",
+                    "information": " Landjaeger fatback shank frankfurter, tongue shoulder ham strip steak pancetta pork short loin corned beef short ribs biltong cow",
+                    "price": "$25",
+                    "imgSrc":"assets/imgs/m2.jpg"
+                },
+                {
+                    "name": "Pizza Ionic",
+                    "information": "Pork chop pastrami landjaeger chuck brisket",
+                    "price": "$19.99",
+                    "imgSrc":"assets/imgs/m2.jpg"
+                }
+            ]
+        },
+        {
+            "name": "Laptop",
+            "icon":"assets/imgs/i7.png",
+            "children": [
+                {
+                    "name": "Special Academy Pizza",
+                    "information": " Landjaeger fatback shank frankfurter, tongue shoulder ham strip steak pancetta pork short loin corned beef short ribs biltong cow",
+                    "price": "$25",
+                    "imgSrc":"assets/imgs/m2.jpg"
+                },
+                {
+                    "name": "Pizza Ionic",
+                    "information": "Pork chop pastrami landjaeger chuck brisket",
+                    "price": "$19.99",
+                    "imgSrc":"assets/imgs/m2.jpg"
+                }
+            ]
+        }
+    ]
+}

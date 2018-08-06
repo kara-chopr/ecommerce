@@ -1,0 +1,150 @@
+
+<ion-header>
+    <ion-navbar>
+      <div class="menu_postion">
+        <button id="menu_refence" ion-button menuToggle>
+          <ion-icon name="menu"></ion-icon>
+         
+        </button>
+       
+    <ion-title [innerHtml]="config.getTranslation('home_title')"></ion-title>
+   <div class="cart">   <ion-icon name="cart"></ion-icon> </div>
+  </div>
+   <ion-grid class="catagries_grid">
+    <ion-row class="catagries_row">
+      <ion-col col-3>
+   <button  class="catagries" (click)="redirectTocategoriesPage()"[innerHtml]="config.getTranslation('categories')"></button>
+</ion-col>
+<ion-col col-9>
+    <ion-searchbar
+    [(ngModel)]="myInput"
+    [showCancelButton]="shouldShowCancel"
+    
+    (ionCancel)="onCancel($event)">
+  </ion-searchbar>
+  </ion-col>
+</ion-row>
+</ion-grid>
+  </ion-navbar>
+  
+ 
+</ion-header>
+
+<ion-content>
+
+    <div  class="slidder" id="slidderrs">
+      
+        <ion-slides #slide id="slide1" *ngIf="slideData && slideData.length" autoplay="2000" class="slideroption" pager="true"   loop="true" speed="300">
+       
+            <ion-slide   *ngFor="let slide of slideData; let i =index" >
+                     <span (click)="goToSlide($event, i)">  <img src="{{slide.imageSrc}}" /></span>
+                  </ion-slide>
+          </ion-slides>
+    </div>
+    <span class="line"></span>
+  <div class="primeday">
+      <a> <img [src]="primeday"/></a>
+     </div>
+     
+  <div class="blockbouster" padding>
+    <h4 [innerHtml]="config.getTranslation('block_buster')"></h4>
+    <span class="line"></span>
+ 
+  <div  class="slidderfaed" >
+     
+      <ion-slides *ngIf="fadedData && fadedData.length"  id="Blockbuster" #blockbuster>
+          <ion-slide   *ngFor="let fadedData of fadedData">
+                      <img src="{{fadedData.imgUrl}}"  />
+                     <h4>{{fadedData.name}}</h4>
+                     <p> ${{fadedData.price}}</p>
+                </ion-slide>
+                
+        </ion-slides>
+      
+        <ul class="thumbnail">
+          <li  *ngFor="let fadedData of fadedData;let i=index" >
+            <span (click)="blockBusterSlider( i)">
+              <img src="{{fadedData.imgUrl}}"  />
+            </span></li>
+        </ul>
+        <span class="line"></span>
+       <p class="anchorTag"(click)="redirectToBlockbosterPage()" [innerHtml]="config.getTranslation('Blockbuster Deals')"></p>
+  </div>
+  </div>
+  <div id="verifyemail" (click)="redirectToeditemail()">
+    <img src="assets/imgs/c1.jpg"/>
+  </div>
+  <div id="exchangeoffer" padding>
+      <h4 [innerHtml]="config.getTranslation('Exchange_Offer')"></h4>
+      <span class="line"></span>
+   
+    <div  class="slidderfaed" >
+     
+        <ion-slides *ngIf="fadedData && fadedData.length"  id="Blockbuster" #exchangeOffer>
+            <ion-slide   *ngFor="let fadedData of fadedData">
+                        <img src="{{fadedData.imgUrl}}"  />
+                       <h4>{{fadedData.name}}</h4>
+                       <p> ${{fadedData.price}}</p>
+                  </ion-slide>
+                  
+          </ion-slides>
+         
+          <ul class="thumbnail">
+            <li  *ngFor="let fadedData of fadedData;let i=index" >
+              <span (click)="exchangeOfferSlidder( i)">
+                <img src="{{fadedData.imgUrl}}"  />
+              </span></li>
+          </ul>
+          <span class="line-blockbuster"></span>
+         <p class="anchorTag"(click)="redirectToexchangePage()" [innerHtml]="config.getTranslation('allexchangeoffer')"></p>
+    </div>
+    </div>
+    <div class="daily-esstails" (click)="daily_esstails()">
+      <img src="assets/imgs/b1.jpg"/>
+    </div>
+    <div class="motto-phone" padding>
+        <h5 class="motto_heading" [innerHtml]="config.getTranslation('Moto Offer')"> </h5>
+        <ion-grid>
+            <ion-row>
+              <ion-col col-6  *ngFor="let motophonedata of motophonedatas">
+                  <span class="background-green">  <img [src]="motophonedata.imageSrc"/></span>
+                  <h6 class="motomobile_name">{{motophonedata.name}}</h6>
+                <p class="motomobile_price">${{motophonedata.price}}</p>
+                </ion-col>
+                </ion-row>
+                </ion-grid>
+
+    </div>
+    <span class="sign-line"></span>
+    <div class="discount" padding>
+      <h4 class="discount-heading" [innerHtml]="config.getTranslation('off On Electrnics')"></h4>
+      <div class="image">
+        <img src="assets/imgs/f5.jpg">
+      </div>
+    </div>
+    <span class="sign-line"></span>
+  <div class="sign-in" padding>
+     
+       <p class="sing_inheading" [innerHtml]="config.getTranslation('Signin_heading')"> </p>
+      <button ion-button class="signin-button" [innerHtml]="config.getTranslation('signin')"
+      (click)="redirectTologinPage()"></button>
+   
+    </div>
+    <span class="sign-line"></span>
+   
+         
+    <div class="feature_catgries" padding>
+        <h4 class="feature_catgries-heading" [innerHtml]="config.getTranslation('Todays Deal')"></h4>
+        <ion-grid>
+            <ion-row>
+        <ion-col col-4  *ngFor="let feature_catgries of feature_catgriess">
+            <span class="feature_image">  <img [src]="feature_catgries.imageSrc"/></span>
+            <h6 class="feature_catgries_name">{{feature_catgries.name}}</h6>
+          <p class="feature_catgries_price">$ {{feature_catgries.price}}</p>
+        </ion-col>
+        </ion-row>
+        </ion-grid>
+    </div>
+  </ion-content>
+  
+ 

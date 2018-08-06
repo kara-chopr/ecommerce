@@ -1,0 +1,69 @@
+page-login-signup {
+.form-signin{
+     margin-bottom: 10px; 
+}
+.signin_button{
+    background: #f1e767; /* Old browsers */
+background: -moz-linear-gradient(top, #f1e767 0%, #feb645 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #f1e767 0%,#feb645 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #f1e767 0%,#feb645 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1e767', endColorstr='#feb645',GradientType=0 ); /* IE6-9 */
+color: #655e5e;
+text-align: center; border:none;
+}
+.toolbar-background-md {
+    border-color: #b2b2b2;
+    background: #f8f8f8;
+    color: #000; margin: 0 auto;
+}
+.toolbar-title-md {
+  
+    color: #000;
+}
+.myClass , .toggle-icon {
+	background-color: purple; // this changes the background, ie the grey stripe.
+	.toggle-inner {
+		background-color: yellow; // this changes the backgroundcolor of the toggle dot.
+	}
+}
+#signup{
+    width:100%; margin: 0 auto; border: #ccc 1px solid;
+  
+}
+.create_account{
+    border-color: #b2b2b2;
+    background: #ffffff; /* Old browsers */
+background: -moz-linear-gradient(top, #ffffff 0%, #f6f6f6 47%, #ededed 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed',GradientType=0 ); /* IE6-9 */
+
+}
+.transpaent_background{
+    border-color: none;
+    background:transparent;
+
+}
+.text-input-md {
+    
+    padding-top:11px;
+    padding-left: 20px;
+}
+.form-signup{
+    position: relative;
+    width:100%;
+}
+.icons {
+    position: relative;
+    top: -34px;
+    margin-left: 16px;
+    font-size: 20px; color: #555555
+}
+.icons_login{
+    position: relative;
+    top: -41px;
+    margin-left: 16px;
+    font-size: 20px; color: #555555
+
+}
+}
